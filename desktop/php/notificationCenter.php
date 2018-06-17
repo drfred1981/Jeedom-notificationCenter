@@ -133,4 +133,3 @@ foreach (object::all() as $object) {
 </div>
 
 <?php include_file('desktop', 'notificationCenter', 'js', 'notificationCenter');?>
-<?php include_file('core', 'plugin.notificationCenter', 'js');?>

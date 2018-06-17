@@ -4,8 +4,8 @@
 	"description" : "Plugin Notification Center, center de notification des évènements de Jeedom",
 	"licence" : "AGPL",
 	"author" : "Jeedom SAS",
-	"require" : "3.2",
-	"category" : "programming",
+	"require" : "3.1",
+	"category" : "monitoring",
 	"hasDependency" : false,
 	"hasOwnDeamon" : false,
 	"maxDependancyInstallTime" : 0,
@@ -13,7 +13,7 @@
 	"documentation" : "https://jeedom.github.io/plugin-template/#language#/",
 	"link" : {
 		"forum":"Lien vers le forum",
-		"video" : "Lien vers une video",
+		"video" : "Lien vers une video"
 	},
 	"language" : ["fr_FR","en_US","de_DE","sp_SP","ru_RU","id_ID","it_IT"],
 	"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile"]
