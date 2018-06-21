@@ -1,0 +1,27 @@
+{
+    "plugins\/notificationCenter\/desktop\/php\/notificationCenter.php": {
+        "Mon Centre de Notification": "Mon Centre de Notification",
+        "Mes notifications": "Mes notifications",
+        "Ajouter une notification": "Ajouter une notification",
+        "Gestion": "Gestion",
+        "Configuration": "Configuration",
+        "Sauvegarder": "Sauvegarder",
+        "Supprimer": "Supprimer",
+        "Commandes": "Commandes",
+        "Nom de l'équipement": "Nom de l'équipement",
+        "Objet parent": "Objet parent",
+        "Aucun": "Aucun",
+        "Catégorie": "Catégorie",
+        "Activer": "Activer",
+        "Visible": "Visible",
+        "Commande": "Commande",
+        "voir la doc": "voir la doc",
+        "Nom": "Nom",
+        "Type": "Type",
+        "Paramètres": "Paramètres",
+        "General": "General",
+        "Commandes à suivre": "Commandes à suivre",
+        "Scenarios": "Scénarios",
+        "Nom de la notification": "Nom de la notification"
+    }
+}
