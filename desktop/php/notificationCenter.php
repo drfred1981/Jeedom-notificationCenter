@@ -58,13 +58,34 @@ foreach ($eqLogics as $eqLogic) {
   <a class="btn btn-danger eqLogicAction pull-right" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
   <a class="btn btn-default eqLogicAction pull-right" data-action="configure"><i class="fa fa-cogs"></i> {{Configuration avancée}}</a>
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation"><a href="#" class="eqLogicAction" aria-controls="home" role="tab" data-toggle="tab" data-action="returnToThumbnailDisplay">
-    <i class="fa fa-arrow-circle-left"></i></a></li>
     <li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{General}}</a></li>
-    <li role="presentation" class="active"><a href="#notifCommands" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Commandes à suivre}}</a></li>
-    <li role="presentation" class="active"><a href="#notifScenarios" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Scenarios à suivre}}</a></li>
-     <li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Commandes}}</a></li>
-  </ul>
+    <li role="presentation" ><a href="#notifCommands" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> </a></li>
+    <li role="presentation" ><a href="#notifInfos" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Informations à suivre}}</a></li>
+    <li role="presentation" ><a href="#notifScenarios" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Scenarios à suivre}}</a></li>
+   
+			<li role="presentation">
+				<a href="#" class="eqLogicAction" aria-controls="home" role="tab" data-toggle="tab" data-action="returnToThumbnailDisplay">
+					<i class="fa fa-arrow-circle-left"></i>
+				</a>
+			</li>
+			<li role="presentation" class="active">
+				<a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">
+					<i class="fa fa-tachometer"></i> {{Notification}}</a>
+			</li>
+			<li role="presentation" class="notifCommands">
+				<a href="#notifCommands" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">
+					<i class="icon loisir-runner5"></i> {{Commandes à suivre}}</a>
+			</li>
+			<li role="presentation" class="notifInfos">
+				<a href="#notifInfos" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">
+					<i class="icon loisir-runner5"></i> {{Informations à suivre}}</a>
+			</li>
+			<li role="presentation" class="notifScenarios">
+				<a href="#notifScenarios" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">
+					<i class="icon loisir-runner5"></i>{{Scenarios à suivre}}</a>
+			</li>
+			
+		</ul>
   <div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
     <div role="tabpanel" class="tab-pane active" id="eqlogictab">
       <br/>
@@ -118,21 +139,11 @@ foreach (object::all() as $object) {
 </fieldset>
 </form>
 </div>
-      <div role="tabpanel" class="tab-pane" id="commandtab">
-<a class="btn btn-success btn-sm cmdAction pull-right" data-action="add" style="margin-top:5px;"><i class="fa fa-plus-circle"></i> {{Commandes}}</a><br/><br/>
-<table id="table_cmd" class="table table-bordered table-condensed">
-    <thead>
-        <tr>
-            <th>{{Nom}}</th><th>{{Type}}</th><th>{{Action}}</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
-</div>
+     
 </div>
 
 </div>
 </div>
 
 <?php include_file('desktop', 'notificationCenter', 'js', 'notificationCenter');?>
+<?php include_file('core', 'plugin.template', 'js'); ?>
